@@ -1,5 +1,6 @@
 echo 'Installing dotfiles...'
 mkdir -p $HOME/.config/lyncser
+eval $(gp env -e)
 if [[ ! -z "$REAL_GCP_ACCOUNT_CREDENTIALS" ]]; then
   echo "Using real GCP account credentials"
   cp $HOME/.gitconfig $HOME/.gitconfig_gitpod
