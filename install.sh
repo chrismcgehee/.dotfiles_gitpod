@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo 'Installing dotfiles...'
 mkdir -p $HOME/.config/lyncser
 eval $(gp env -e)
